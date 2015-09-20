@@ -1,0 +1,225 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+#header {
+	background: #cfe7fa; /* Old browsers */
+	background: -moz-linear-gradient(top, #cfe7fa 0%, #6393c1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cfe7fa), color-stop(100%,#6393c1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #cfe7fa 0%,#6393c1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cfe7fa 0%,#6393c1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #cfe7fa 0%,#6393c1 100%); /* IE10+ */
+	background: linear-gradient(top, #cfe7fa 0%,#6393c1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 ); /* IE6-9 */
+	padding: 25px 25px 15px 40px;
+/*	height: 80px;*/
+}
+
+#header h1 {
+	font-size: 32px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 15px;
+	text-shadow: 1px 1px 1px #eee;
+}
+#header h1 .addinfo {
+	font-weight: normal;
+	color: #777;
+	font-size: 18px;
+}
+
+#header #menu {
+	
+}
+#header #menu a {
+	color: #fff;
+	margin-right: 10px;
+}
+#header #menu a:hover {
+	text-decoration: none;
+}
+
+#footer {
+	text-align: right;
+	padding: 10px 35px;
+}
+
+#content p {
+	margin: 15px  35px;
+	padding: 4px;
+}
+#content p.actions {
+	line-height: 22px;
+}
+
+#content p strong {
+	font-weight: bold;
+}
+
+#content a {
+	color: #b00;
+}
+#content a:hover {
+	text-decoration: none;
+}
+
+#content .item {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f3f3f3), color-stop(51%,#ededed), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	
+	 -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius:7px;
+}
+
+#content .item {
+	min-height: 142px; /* to fit a feedimg */
+	border: 1px solid #bbb;
+	margin: 15px 35px;
+	padding: 4px 12px;
+	position: relative;
+/*	overflow: hidden;*/
+}
+#content .item .feedicon {
+	float:right;
+	margin: -4px -12px 0 0;
+}
+#content .item .feedicon img {
+	width: 150px;
+}
+#content .item h3 {
+	font-size: 22px;
+	font-style: italic;
+	font-family: Georgia, serif;
+	margin-bottom: 5px;
+}
+#content .item h3 .subtitle {
+	font-size: 14px;
+	font-family: Helvetica, sans-serif;
+	font-style: normal;
+	margin-left: 3px;
+	color: #666;
+}
+#content .item p {
+	margin: 3px 0;
+	padding: 1px 0;
+	font-size: 14px;
+}
+#content .item p.summary {
+/*	font-size: 14px;*/
+}
+#content .item p span.fieldname {
+	color: #aaa;
+	font-style: italic;
+}
+#content .item p.actions {
+	font-size: 12px;
+	line-height: 12px;
+}
+#content .item p.actions a img {
+	position: relative;
+	top: 3px;
+	margin-right: -3px;
+}
+
+#content .item ul {
+	margin: 3px 0;
+	padding: 1px 0;
+}
+#content .item ul li {
+	font-size: 12px;
+	padding-left: 6px;
+	line-height: 16px;
+	list-style: disc inside;
+}
+#content .chosen-container ul li {
+	list-style: none;
+}
+#content .item ul.chosen-results li.chose
+#content .item ul li.feed {
+	list-style: none;
+	padding-left: 18px;
+	background: transparent url(../img/icons/feed-icon.png) 0 1px no-repeat;
+}
+
+#content .item.feedicon {
+	width: 200px;
+	float: left;
+	margin: 15px -15px 15px 35px;
+}
+#content .item.feedicon img {
+	width: 200px;
+}
+
+div.form {
+	margin: 15px 35px;
+	padding: 4px 12px;
+}
+div.form fieldset {
+/*	padding: 5px;*/
+}
+div.form fieldset legend {
+	font-family: Georgia, serif;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+#content div.form p.inlinecomment {
+	font-size: 14px;
+	margin: 15px 5px;
+}
+
+div.form .input {
+	margin: 5px 0;
+	clear: both;
+	position: relative;
+}
+div.form form label {
+	width: 140px;
+	display: block;
+	float: left;
+	text-align: right;
+	padding: 5px 6px 0 0;
+	margin-bottom: 5px;
+	line-height: 25px;
+	font-size: 14px;
+	background: #eee;
+}
+div.form form .input.text input {
+	font-size: 16px;
+	padding: 1px 5px;
+	width: 320px;
+	height: 26px;
+	border: 1px solid #eee;
+}
+div.form form .input.textarea textarea {
+	font-size: 16px;
+	width: 320px;
+	border: 1px solid #eee;
+	padding: 5px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+div.form form .input .description {
+	color: #555;
+	font-size: 14px;
+	left: 490px;
+	position: absolute;
+	top: 0px;
+	width: 300px;
+	line-height: 18px;
+}
+div.form form .input .description.important {
+	color: #f00;
+}
+
+div.form div.submit {
+	width: 480px;
+	text-align: right;
+}

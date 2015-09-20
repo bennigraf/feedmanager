@@ -1,0 +1,9 @@
+create .gitignore
+create bare repo (xxx.git) on server (create folder, git --bare init .)
+init local repo (git init)
+add files here (git add .)
+commit stuff here (git commit -m "Init message")
+add remote repo to origins (i.e. git remote add origin ssh://aaaaa@bbb/path/to/cakephp/app.git)
+push (git push origin master)
+done!
+(maybe clone repo on remote machine for usage (git clone xxx.git) )

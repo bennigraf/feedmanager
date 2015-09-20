@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Label</key>
+		<string>com.imwi.itunesufeedmanager.syncpcplibtocake</string>
+		<key>ProgramArguments</key>
+		<array>
+			<string>/Library/WebServer/cakephp/app/Console/cake</string>
+			<string>syncpcplib</string>
+		</array>
+		<key>WorkingDirectory</key>
+		<string>/Library/WebServer/cakephp/app</string>
+		<key>StandardErrorPath</key>
+		<string>/Library/WebServer/cakephp/app/tmp/logs/console_error</string>
+		<key>StandardOutPath</key>
+		<string>/Library/WebServer/cakephp/app/tmp/logs/console_out</string>
+		<key>StartInterval</key>
+		<integer>60</integer>
+		<key>RunAtLoad</key>
+		<true/>
+	</dict>
+</plist>
+<!--
+	put this file into /Library/LaunchDaemons to load on boot
+	you can also load it manually:
+	launchctl load /x/y/com.imwi.itunesufeedmanager.syncpcplibtocake.plist
+-->

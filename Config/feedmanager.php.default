@@ -1,0 +1,40 @@
+<?php
+// DEPRECATED since Feedmanager doesn't use PCP server anymore!
+// path to pcp-library, with or without trailing /
+Configure::write('Pcp.library-path', '/Library/PodcastProducer/Shared/');
+
+// path to folder where the media files reside, with or without trailing /
+// remember to make it accessible for _www-user: chmod +a "_www allow list,search,delete_child,read,file_inherit,directory_inherit" Shared
+Configure::write('Fdmngr.library-path', '/some/path/to/media');
+
+// path to import-folder - put media files you want to import using the web interface here!
+Configure::write('Fdmngr.import-path', '/some/path/to/import-media');
+
+
+// web-url-prefix to access Feedmanager
+Configure::write('urlprefix', 'http://some-host.edu/itunesu');
+
+// web url to access assets
+//   %item_uid% - replaced with guid of item
+//   %item_date% - replaced with date-string of item (important because pcp library uses this in filepath)
+//   %asset_uid% - replaces with guid of asset
+//   %asset_ext% - replaced with extension of asset (without the "."!)
+// remember that you may have to take care of rewriting the url on access yourself!
+Configure::write('asseturl', 'http://some-host.edu/itunesu/assets/%asset_uid%.%asset_ext%');
+
+
+// Default feed author, used if no auther is being given manually
+Configure::write('feed.default-author', 'Some Author - Maybe your institution name?');
+
+// Link inside feeds 'channel' object - should be a web site of your institution
+Configure::write('feed.channel-link', 'http://some-host.edu/itunesu/itunesu.html');
+
+// A default "owner" of each feed - should be the providing institution, maybe your IT department
+Configure::write('feed.channel-owner.name', 'Some Name');
+Configure::write('feed.channel-owner.email', 'Some email address');
+
+// Copyright of each feed
+Configure::write('feed.copyright', '© your Institution');
+
+// Full path to your local mdls command, used to determine UTIs of media files (i.e. com.apple.audio)
+Configure::write('mdls', '/usr/bin/mdls');
