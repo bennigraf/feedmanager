@@ -1,0 +1,13 @@
+Config/database.php
+Config/core.php
+Config/feedmanager.php
+itunesufeedmanager
+itunesufeedmanager.sqlite3db
+webroot/itunesufeedmanager
+webroot/feedimgs/feedicon_*
+
+tmp/cache/persistent/*
+tmp/cache/models/*
+tmp/cache/views
+tmp/logs/*.log
+tmp/logs/console*
